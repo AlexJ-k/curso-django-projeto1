@@ -19,5 +19,6 @@ class RecipeCategoryModelTest(RecipeTestBase):
         self.category.name = 'A' * 66
         with self.assertRaises(ValidationError):
             self.category.full_clean()
+            
 
        
